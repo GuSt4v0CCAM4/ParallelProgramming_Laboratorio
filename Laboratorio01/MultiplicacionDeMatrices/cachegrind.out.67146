@@ -1,71 +1,466 @@
-cmd: ./MultiplicacionClasicaDebug
+cmd: ./MultiplicacionClasica
 events: Ir
 fl=/mnt/hdd/Documentos/EPCC/8vo ciclo/Computacion Paralela/Laboratorio/Laboratorio01/MultiplicacionDeMatrices/MultiplicacionClasica.cpp
-fn=llenarMatrizAletoriamnte(int (*) [100])
-12 8
-13 608
-14 60800
-15 520000
-18 8
+fn=convertirCiclosAMilisegundos(unsigned long)
+37 27
+38 90
+39 18
+fn=leerContadorCiclos()
+33 72
+35 72
+fn=llenarMatrizAletoriamnte(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&, int)
+13 108
+14 36090
+15 22845000
+16 96900000
+19 90
 fn=main
-32 6
-33 4
-38 3
-39 3
-41 2
-43 6
-45 2
-46 14
-48 19
-50 1
-51 5
-fn=multiplicacionMatrices(int (*) [100], int (*) [100], int (*) [100])
-21 5
-22 304
-23 30400
-24 140000
-25 3040000
-26 58000000
-30 4
+41 7
+42 4
+43 1
+44 49
+45 153
+46 153
+47 45
+48 45
+50 9
+52 153
+53 306
+55 36
+56 108
+57 36
+58 54
+59 36
+62 54
+63 54
+64 45
+65 261
+66 54
+70 1
+71 6
+fn=multiplicacionMatrices(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&, int)
+22 144
+23 36090
+24 22845000
+25 74100000
+26 16228500000
+27 170100000000
+31 90
 fl=/usr/include/bits/string_fortified.h
 fn=std::locale::_Impl::_Impl(unsigned long)
 29 2
-fl=/usr/include/c++/14.2.1/bits/chrono.h
-fn=std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const
-589 9
-590 12
-fn=std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
-573 4
-574 7
-fn=std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
-210 7
-213 6
-214 13
-215 5
-fn=std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const
-589 3
-590 4
-fn=std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&)
-573 4
-574 7
-fn=std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const
-949 6
-950 8
-fn=std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
-710 9
-716 22
-717 6
-fn=std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
-1141 8
-1143 18
-fn=std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
-275 4
-289 3
-293 2
+fl=/usr/include/c++/14.2.1/bits/alloc_traits.h
+fn=std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+478 144288
+fn=std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+513 126252
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long)
+478 288
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned long)
+513 252
+fn=std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+570 36
+fn=std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+584 18000
+fn=std::vector<int, std::allocator<int> >::~vector()
+944 90180
+945 18036
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_max_size(std::allocator<std::vector<int, std::allocator<int> > > const&)
+570 36
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector()
+944 180
+945 36
+fl=/usr/include/c++/14.2.1/bits/allocator.h
+fn=main
+161 144
+182 306
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+166 18036
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+182 72144
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl(std::allocator<std::vector<int, std::allocator<int> > > const&)
+166 36
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl()
+182 144
+fn=std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+166 36
+182 144
+fn=std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+166 18000
+182 72000
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_check_init_len(unsigned long, std::allocator<std::vector<int, std::allocator<int> > > const&)
+166 36
+182 144
+fl=/usr/include/c++/14.2.1/bits/cpp_type_traits.h
+fn=__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+607 108000
+608 108000
+fl=/usr/include/c++/14.2.1/bits/move.h
+fn=int* std::__addressof<int>(int&)
+51 108
+52 108
+fn=std::vector<int, std::allocator<int> > const& std::forward<std::vector<int, std::allocator<int> > const&>(std::remove_reference<std::vector<int, std::allocator<int> > const&>::type&)
+70 54000
+71 54000
+fn=std::vector<int, std::allocator<int> >* std::__addressof<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >&)
+51 108000
+52 108000
+fl=/usr/include/c++/14.2.1/bits/new_allocator.h
+fn=main
+88 72
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+92 18036
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl(std::allocator<std::vector<int, std::allocator<int> > > const&)
+92 36
+fn=std::__new_allocator<int>::allocate(unsigned long, void const*)
+126 144288
+134 126252
+151 90180
+152 36072
+233 18036
+fn=std::__new_allocator<int>::deallocate(int*, unsigned long)
+156 108216
+172 108216
+173 36072
+fn=std::__new_allocator<int>::~__new_allocator()
+104 216648
+fn=std::__new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*)
+126 288
+134 252
+151 288
+152 72
+233 36
+fn=std::__new_allocator<std::vector<int, std::allocator<int> > >::deallocate(std::vector<int, std::allocator<int> >*, unsigned long)
+156 216
+172 360
+173 72
+fn=std::__new_allocator<std::vector<int, std::allocator<int> > >::~__new_allocator()
+104 648
+fn=std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+92 36
+fn=std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+183 36
+233 36
+fn=std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+92 18000
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_check_init_len(unsigned long, std::allocator<std::vector<int, std::allocator<int> > > const&)
+92 36
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_max_size(std::allocator<std::vector<int, std::allocator<int> > > const&)
+183 36
+233 36
+fl=/usr/include/c++/14.2.1/bits/stl_algobase.h
+fn=__gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&)
+947 180
+950 108
+951 72000
+952 53892
+953 144
+fn=int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int const, int>(int const*, int const*, int*)
+448 108000
+450 72000
+451 90000
+452 144000
+456 72000
+457 36000
+fn=int* std::__copy_move_a1<false, int const*, int*>(int const*, int const*, int*)
+547 108000
+548 144000
+fn=int* std::__copy_move_a2<false, int const*, int*>(int const*, int const*, int*)
+512 108000
+521 108000
+522 36000
+fn=int* std::__copy_move_a<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+553 144000
+555 360000
+559 90000
+fn=int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag)
+1140 216
+1146 72
+1151 324
+1152 144
+1153 72
+fn=int* std::__niter_base<int*>(int*)
+316 54000
+318 54000
+fn=int* std::__niter_wrap<int*>(int* const&, int*)
+353 72000
+354 54000
+fn=int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+642 126000
+651 234000
+652 54000
+fn=int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+1175 216
+1180 324
+1182 72
+fn=std::__size_to_integer(unsigned long)
+1040 216
+fn=unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+233 288
+238 432
+240 72
+241 144
+fn=void std::__fill_a<int*, int>(int*, int*, int const&)
+997 216
+998 324
+fl=/usr/include/c++/14.2.1/bits/stl_construct.h
+fn=void std::_Construct<int>(int*)
+109 144
+119 180
+120 108
+fn=void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&)
+109 162000
+119 216000
+120 144000
+fn=void std::_Destroy<int*>(int*, int*)
+182 90180
+196 90180
+197 54108
+fn=void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*)
+146 72000
+151 54000
+153 54000
+fn=void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+182 180
+196 180
+197 108
+fn=void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+160 180
+162 72144
+163 90000
+164 144
+fn=void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+172 126252
+fl=/usr/include/c++/14.2.1/bits/stl_iterator.h
+fn=__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&)
+1067 144000
+1068 252000
+fn=__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const
+1153 108000
+1154 108000
+fn=int const* std::__niter_base<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+1348 144000
+1350 216000
+fl=/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h
+fn=int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+240 36
+fl=/usr/include/c++/14.2.1/bits/stl_uninitialized.h
+fn=int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+145 108000
+147 144000
+fn=int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&)
+366 126000
+373 108000
+374 36000
+fn=int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+696 180
+707 36
+712 180
+713 72
+fn=int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+660 180
+662 72
+665 144
+666 108
+667 36
+668 288
+670 36
+671 72
+fn=int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+777 216
+779 252
+fn=int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+163 108000
+174 18000
+181 18000
+185 108000
+186 36000
+fn=std::vector<int, std::allocator<int> >* std::__do_uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&)
+261 252
+263 72
+266 72108
+267 144000
+268 72
+275 108
+fn=std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&)
+282 216
+284 288
+fn=std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&)
+465 252
+472 216
+473 72
+fn=std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&)
+312 216
+319 36
+327 216
+328 72
+fl=/usr/include/c++/14.2.1/bits/stl_vector.h
+fn=std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+377 90180
+380 108216
+381 36072
+fn=std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+396 90180
+398 126252
+399 72144
+400 126252
+401 54108
+fn=std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+385 108216
+388 36072
+389 108216
+390 54108
+fn=std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+300 108216
+301 108216
+fn=std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+305 54000
+306 54000
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&)
+332 126252
+333 90180
+334 162324
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+145 234468
+146 54108
+147 54108
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+132 162324
+fn=std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data()
+98 54108
+99 108216
+100 54108
+fn=std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+366 72144
+368 126252
+369 126252
+370 108216
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long)
+377 180
+380 216
+381 72
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_create_storage(unsigned long)
+396 180
+398 252
+399 144
+400 360
+401 108
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned long)
+385 216
+388 72
+389 216
+390 108
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator()
+300 216
+301 216
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base(unsigned long, std::allocator<std::vector<int, std::allocator<int> > > const&)
+332 252
+333 180
+334 324
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl(std::allocator<std::vector<int, std::allocator<int> > > const&)
+145 468
+146 108
+147 108
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl()
+132 324
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl_data::_Vector_impl_data()
+98 108
+99 216
+100 108
+fn=std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base()
+366 144
+368 252
+369 288
+370 216
+fn=std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long)
+1717 180
+1719 72
+1720 216
+1721 144
+1722 108
+fn=std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+1917 540
+1919 252
+1922 36
+1923 216
+fn=std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+1926 252
+1931 288
+1933 36
+1934 216
+1935 180
+fn=std::vector<int, std::allocator<int> >::begin() const
+883 126000
+884 198000
+fn=std::vector<int, std::allocator<int> >::end() const
+903 126000
+904 216000
+fn=std::vector<int, std::allocator<int> >::operator[](unsigned long)
+1128 48645600000
+1131 60807000000
+1132 24322800000
+fn=std::vector<int, std::allocator<int> >::size() const
+992 54000
+993 162000
+fn=std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+601 198000
+603 432000
+605 36000
+606 252000
+608 72000
+609 180000
+fn=std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
+556 252
+557 432
+558 324
+fn=std::vector<int, std::allocator<int> >::~vector()
+733 72144
+735 126252
+736 54108
+738 108216
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_initialize(unsigned long, std::vector<int, std::allocator<int> > const&)
+1706 216
+1708 72
+1709 216
+1710 144
+1711 108
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_check_init_len(unsigned long, std::allocator<std::vector<int, std::allocator<int> > > const&)
+1917 540
+1919 252
+1922 36
+1923 216
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_S_max_size(std::allocator<std::vector<int, std::allocator<int> > > const&)
+1926 252
+1931 288
+1933 36
+1934 216
+1935 180
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned long)
+1128 48645600000
+1131 97291200000
+1132 24322800000
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector(unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > > const&)
+569 288
+571 432
+572 360
+fn=std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector()
+733 144
+735 252
+736 108
+738 216
+fl=/usr/include/c++/14.2.1/ext/alloc_traits.h
+fn=std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+98 18000
+fl=/usr/include/c++/14.2.1/new
+fn=operator new(unsigned long, void*)
+180 126252
 fl=/usr/include/wchar.h
 fn=std::ctype<wchar_t>::_M_initialize_ctype()
 345 512
 351 256
+fl=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/ia32intrin.h
+fn=leerContadorCiclos()
+114 144
 fl=/usr/src/debug/gcc/gcc-build/gcc/include/cpuid.h
 fn=__cpu_indicator_init@GCC_4.8.0
 310 4
@@ -76,9 +471,9 @@ fn=std::atomic<std::shared_ptr<std::chrono::tzdb_list::_Node> >::~atomic()
 501 1
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/basic_ios.h
 fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
-326 2
+326 27
 fn=std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)
-49 2
+49 18
 fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
 326 13
 fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::sentry::sentry(std::basic_ostream<wchar_t, std::char_traits<wchar_t> >&)
@@ -89,20 +484,24 @@ fn=std::ios_base::Init::Init()
 314 4
 465 24
 466 56
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+49 18
+326 9
+376 18
 fn=std::ostream& std::ostream::_M_insert<long>(long)
-49 4
+49 20
 162 2
-326 1
-376 2
+326 9
+376 18
 378 1
 379 1
 fn=std::ostream::flush()
-326 16
+326 40
 fn=std::ostream::put(char)
-326 2
+326 18
 fn=std::ostream::sentry::sentry(std::ostream&)
-142 10
-300 9
+142 68
+300 67
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/basic_ios.tcc
 fn=std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
 157 28
@@ -139,13 +538,12 @@ fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambu
 153 16
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/char_traits.h
 fn=std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
-391 6
+391 81
 fn=std::ostream::put(char)
-450 1
-fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/chrono.h
-fn=std::chrono::_V2::system_clock::now()
-227 2
-702 2
+450 9
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+397 27
+403 45
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/codecvt.h
 fn=std::locale::_Impl::_Impl(unsigned long)
 484 3
@@ -153,20 +551,33 @@ fn=std::locale::_Impl::_Impl(unsigned long)
 599 3
 656 3
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/ios_base.h
+fn=std::__num_base::_S_format_float(std::ios_base const&, char*, char)
+85 27
+683 9
 fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
-776 4
-787 2
+776 54
+787 27
 fn=std::ios_base::Init::Init()
 105 2
 fn=std::ios_base::ios_base()
 629 144
+fn=std::ostream::operator<<(int)
+85 18
+683 9
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+85 18
+753 9
+776 9
+787 18
+788 9
+838 27
 fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
-85 3
-683 1
-776 1
-787 1
-788 1
-838 1
+85 27
+683 9
+776 9
+787 9
+788 9
+838 9
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_classes.h
 fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
 830 4
@@ -218,6 +629,11 @@ fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::_M_cache_locale(std::loc
 120 4
 121 4
 122 4
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+96 27
+97 9
+105 18
+205 18
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_facets.h
 fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
 1891 4
@@ -232,7 +648,7 @@ fn=_GLOBAL__sub_I_wlocale_inst.cc
 2302 4
 2589 4
 fn=std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)
-882 3
+882 27
 fn=std::ctype<char>::_M_widen_init() const
 1118 32
 fn=std::locale::_Impl::_Impl(unsigned long)
@@ -249,45 +665,71 @@ fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
 1717 8
 1718 6
 fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
-2538 1
-2539 2
+2538 9
+2539 18
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+2463 81
 fn=std::ostream& std::ostream::_M_insert<long>(long)
 882 3
 884 2
 885 7
-2400 8
+2400 80
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+909 27
+911 36
+912 36
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_facets.tcc
 fn=int std::__int_to_char<char, unsigned long>(char*, unsigned long, char const*, std::_Ios_Fmtflags, bool)
-812 3
-816 2
-821 38
-822 3
-824 6
-849 2
-850 1
+812 27
+816 18
+821 342
+822 27
+824 54
+849 18
+850 9
 fn=std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const [clone .isra.0]
-53 7
-55 3
-56 1
-57 5
-73 6
+53 126
+55 54
+56 18
+57 90
+73 108
+fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const
+1175 9
+1177 27
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+992 144
+999 18
+1002 27
+1011 54
+1021 72
+1022 18
+1023 117
+1030 18
+1064 171
+1066 18
+1071 27
+1073 24
+1074 16
+1080 18
+1107 36
+1119 99
 fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
-868 17
-877 2
-878 1
-883 7
-889 3
-890 2
-892 2
-893 1
-894 9
-895 5
-898 4
-911 2
-914 2
-917 2
-940 3
-952 11
+868 153
+877 18
+878 9
+883 63
+889 27
+890 18
+892 18
+893 9
+894 81
+895 45
+898 36
+911 18
+914 18
+917 18
+940 27
+952 99
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_facets_nonio.h
 fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
 794 4
@@ -356,45 +798,57 @@ fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::sentry::sentry(std::
 54 11
 55 4
 58 16
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+63 99
+66 54
+67 18
+73 36
+78 18
+92 108
 fn=std::ostream& std::ostream::_M_insert<long>(long)
-63 13
-66 4
-67 2
-73 4
-78 6
-92 12
+63 117
+66 36
+67 18
+73 36
+78 22
+92 108
 fn=std::ostream::flush()
-221 45
-229 15
-231 20
-232 10
-237 15
-252 45
+221 117
+229 39
+231 52
+232 26
+237 39
+252 117
+fn=std::ostream::operator<<(int)
+110 9
+115 9
+116 36
+119 18
 fn=std::ostream::put(char)
-153 11
-162 4
-163 2
-168 1
-169 2
-183 10
+153 99
+162 36
+163 18
+168 9
+169 18
+183 90
 fn=std::ostream::sentry::sentry(std::ostream&)
-46 54
-48 18
-51 48
+46 402
+48 134
+51 338
 52 2
-54 21
-55 9
-58 36
+54 137
+55 67
+58 268
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/ostream_insert.h
 fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
-54 4
-55 6
-79 28
-85 10
-86 4
-90 6
-91 4
-116 24
+54 54
+55 81
+79 378
+85 135
+86 54
+90 81
+91 54
+116 324
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/shared_ptr_atomic.h
 fn=std::atomic<std::shared_ptr<std::chrono::tzdb_list::_Node> >::~atomic()
 424 2
@@ -404,11 +858,16 @@ fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/st
 fn=_GLOBAL__sub_I_eh_alloc.cc
 882 2
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/streambuf_iterator.h
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+285 9
 fn=std::ostream& std::ostream::_M_insert<long>(long)
-285 1
+285 9
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+327 18
+329 45
 fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
-327 2
-329 5
+327 18
+329 45
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/atomicity.h
 fn=std::ios_base::Init::Init()
 84 2
@@ -450,14 +909,14 @@ fn=_GLOBAL__sub_I_eh_alloc.cc
 129 4
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/stdio_sync_filebuf.h
 fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::overflow(int)
-172 2
-175 3
-236 2
+172 18
+175 27
+236 18
 fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync()
-191 6
-192 12
+191 14
+192 28
 fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long)
-253 18
+253 270
 fn=__gnu_cxx::stdio_sync_filebuf<wchar_t, std::char_traits<wchar_t> >::sync()
 191 5
 192 10
@@ -469,34 +928,36 @@ fn=std::ios_base::Init::Init()
 97 6
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ostream
 fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
-519 12
+519 162
 fn=std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)
-741 5
-742 10
-764 1
+741 45
+742 90
+764 9
 fn=std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
-668 12
-670 6
-673 6
-676 10
+668 162
+670 81
+673 81
+676 135
 fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
 519 27
 522 4
 fn=std::ios_base::Init::Init()
 93 30
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+519 54
 fn=std::ostream& std::ostream::_M_insert<long>(long)
-519 6
+519 54
 fn=std::ostream::flush()
-519 33
+519 81
 522 4
-fn=std::ostream::operator<<(long)
-174 1
-175 1
+fn=std::ostream::operator<<(double)
+228 9
+229 9
 fn=std::ostream::operator<<(std::ostream& (*)(std::ostream&))
-116 1
-121 1
+116 9
+121 9
 fn=std::ostream::put(char)
-519 6
+519 54
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/parallel/settings.h
 fn=_GLOBAL__sub_I_parallel_settings.cc
 286 7
@@ -518,7 +979,7 @@ fn=_GLOBAL__sub_I_parallel_settings.cc
 337 1
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/streambuf
 fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
-458 8
+458 108
 fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
 278 10
 fn=std::ios_base::Init::Init()
@@ -527,20 +988,30 @@ fn=std::ios_base::Init::Init()
 472 19
 473 22
 fn=std::ostream::flush()
-278 12
+278 28
 fn=std::ostream::put(char)
-434 2
-441 2
-539 1
+434 18
+441 18
+539 9
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+458 45
 fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
-458 4
+458 36
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/string_view
 fn=_GLOBAL__sub_I_eh_alloc.cc
 141 2
 142 4
+fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/c++locale.h
+fn=std::__convert_from_v(__locale_struct* const&, char*, int, char const*, ...)
+78 234
+80 27
+94 54
+97 54
+105 18
+114 99
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/gthr-default.h
 fn=std::locale::facet::_S_get_c_locale()
-713 42
+713 69
 fl=/usr/src/debug/gcc/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/messages_members.h
 fn=std::__cxx11::messages<char>::messages(unsigned long)
 44 6
@@ -1027,6 +1498,14 @@ fn=release_registered_frames
 62 2
 63 1
 64 2
+fl=/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++/del_op.cc
+fn=operator delete(void*)
+48 18072
+49 18072
+fl=/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++/del_ops.cc
+fn=operator delete(void*, unsigned long)
+32 18072
+33 18072
 fl=/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++/eh_alloc.cc
 fn=_GLOBAL__sub_I_eh_alloc.cc
 138 1
@@ -1052,11 +1531,12 @@ fn=__cxa_get_globals
 fl=/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++/new
 fn=std::ios_base::Init::Init()
 180 4
-fl=/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++11/chrono.cc
-fn=std::chrono::_V2::system_clock::now()
-52 8
-59 10
-73 10
+fl=/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++/new_op.cc
+fn=operator new(unsigned long)
+43 90360
+47 72288
+50 72288
+59 54216
 fl=/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++11/compatibility-c++0x.cc
 fn=_GLOBAL__sub_I_compatibility_c__0x.cc
 188 4
@@ -1269,9 +1749,9 @@ fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::fac
 424 4608
 431 256
 fn=std::locale::facet::_S_get_c_locale()
-221 70
-226 56
-229 42
+221 115
+226 92
+229 69
 fn=std::locale::facet::_S_get_c_name()
 233 21
 fn=std::locale::facet::_S_initialize_once()
@@ -1279,12 +1759,12 @@ fn=std::locale::facet::_S_initialize_once()
 212 3
 216 3
 fn=std::locale::id::_M_id() const
-507 87
-508 261
+507 113
+508 339
 521 96
 543 288
-545 87
-546 87
+545 113
+546 113
 fn=std::locale::locale(std::locale::_Impl*)
 88 2
 89 1
@@ -1298,6 +1778,22 @@ fn=std::locale::~locale()
 91 40
 93 32
 95 24
+fl=/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++98/locale_facets.cc
+fn=std::__num_base::_S_format_float(std::ios_base const&, char*, char)
+64 9
+66 18
+68 18
+70 18
+77 18
+81 18
+82 9
+85 18
+88 18
+90 18
+91 27
+97 27
+98 9
+99 9
 fl=/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++98/parallel_settings.cc
 fn=_GLOBAL__sub_I_parallel_settings.cc
 42 2
@@ -1586,7 +2082,7 @@ fn=__libc_early_init
 61 8
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/generic/_itoa.h
 fn=_dl_check_map_versions
-76 33
+76 36
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/generic/dl-cache.h
 fn=_dl_load_cache_lookup
 194 1
@@ -1612,35 +2108,35 @@ fn=__rtld_malloc_init_real
 72 1
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/generic/dl-new-hash.h
 fn=_dl_lookup_symbol_x
-69 2827
-70 5654
-74 61987
-77 123974
-80 60584
-81 121168
-87 1424
-88 1424
-89 2848
-90 1424
-99 59160
-101 59160
-102 118320
-104 59160
-105 59160
+69 2831
+70 5662
+74 61995
+77 123990
+80 60592
+81 121184
+87 1428
+88 1428
+89 2856
+90 1428
+99 59164
+101 59164
+102 118328
+104 59164
+105 59164
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/generic/dl-protected.h
 fn=do_lookup_x
-29 11262
+29 11278
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/generic/ldsodefs.h
 fn=_dl_new_object
 1336 48
 fn=_dl_relocate_object
 79 50
-140 13596
+140 13599
 fn=_dl_start
 79 6
 fn=do_lookup_x
-139 5608
-140 8412
+139 5616
+140 8424
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/nptl/dl-mutex.c
 fn=__rtld_mutex_init
 30 7
@@ -1733,8 +2229,8 @@ fn=_dl_sysdep_parse_arguments
 80 2
 81 2
 82 3
-83 99
-84 200
+83 108
+84 218
 87 2
 91 56
 94 2
@@ -2210,10 +2706,10 @@ fn=_dl_hwcaps_subdirs_active
 52 1
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/x86_64/dl-irel.h
 fn=_dl_fixup
-32 1
+32 2
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/x86_64/dl-machine.h
 fn=_dl_fixup
-223 7
+223 10
 fn=_dl_relocate_object
 78 8
 84 4
@@ -2221,18 +2717,18 @@ fn=_dl_relocate_object
 94 1
 103 3
 126 2
-257 9098
-264 9098
-268 9098
-277 36668
-280 18155
-281 9324
-282 9147
+257 9100
+264 9100
+268 9100
+277 36676
+280 18159
+281 9326
+282 9149
 285 60
 286 90
 297 60
 304 120
-307 27294
+307 27300
 336 8
 337 12
 342 6
@@ -2242,7 +2738,7 @@ fn=_dl_relocate_object
 392 68
 396 51
 405 34
-413 11827
+413 11830
 450 3
 454 4
 455 4
@@ -2256,10 +2752,10 @@ fn=_dl_relocate_object
 489 3
 493 6
 494 6
-504 16
-508 16
-511 24
-512 8
+504 36
+508 36
+511 54
+512 18
 720 35
 724 12
 fn=_dl_start
@@ -2272,50 +2768,50 @@ fn=_dl_sysdep_start
 209 1
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/x86_64/dl-runtime.h
 fn=_dl_fixup
-28 7
+28 10
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/x86_64/dl-trampoline.h
 fn=_dl_runtime_resolve_xsave
-39 7
-44 7
-47 7
-49 7
-59 7
-65 7
-66 7
-67 7
-68 7
-69 7
-70 7
-71 7
-75 7
-76 7
-79 7
-80 7
-82 7
-83 7
-84 7
-85 7
-86 7
-87 7
-89 7
-96 7
-97 7
-98 7
-99 7
-104 7
-105 7
-106 7
-108 7
-109 7
-110 7
-111 7
-112 7
-113 7
-114 7
-116 7
-118 7
-122 7
-124 7
+39 10
+44 10
+47 10
+49 10
+59 10
+65 10
+66 10
+67 10
+68 10
+69 10
+70 10
+71 10
+75 10
+76 10
+79 10
+80 10
+82 10
+83 10
+84 10
+85 10
+86 10
+87 10
+89 10
+96 10
+97 10
+98 10
+99 10
+104 10
+105 10
+106 10
+108 10
+109 10
+110 10
+111 10
+112 10
+113 10
+114 10
+116 10
+118 10
+122 10
+124 10
 fl=/usr/src/debug/glibc/glibc/elf/../sysdeps/x86_64/tls_get_addr.S
 fn=__tls_get_addr
 29 2
@@ -2739,13 +3235,13 @@ fl=/usr/src/debug/glibc/glibc/elf/dl-environ.c
 fn=_dl_next_ld_env_entry
 28 2
 29 2
-32 301
-34 198
+32 328
+34 216
 35 48
 37 1
 40 2
 42 1
-45 98
+45 107
 fl=/usr/src/debug/glibc/glibc/elf/dl-find_object.c
 fn=_dl_find_object_init
 562 5
@@ -3217,39 +3713,39 @@ fn=check_match
 64 27
 fl=/usr/src/debug/glibc/glibc/elf/dl-lookup.c
 fn=_dl_lookup_symbol_x
-772 36751
-774 11308
-776 25443
-778 2827
-782 11256
-784 2853
-785 5654
-791 22731
-792 67825
-797 5654
+772 36803
+774 11324
+776 25479
+778 2831
+782 11272
+784 2857
+785 5662
+791 22763
+792 67921
+797 5662
 799 138
-816 5654
+816 5662
 817 69
-820 5654
-821 19616
-856 25236
-870 8412
+820 5662
+821 19644
+856 25272
+870 8424
 871 2
-873 5608
+873 5616
 880 92
-892 25443
+892 25479
 fn=check_match
-70 42225
-73 22520
+70 42285
+73 22552
 78 12
-86 14075
-89 7376
-93 2815
-94 5630
-96 5624
-115 5624
-116 22496
-117 14005
+86 14095
+89 7408
+93 2819
+94 5638
+96 5632
+115 5632
+116 22528
+117 14025
 118 22
 119 22
 144 6
@@ -3258,8 +3754,8 @@ fn=check_match
 150 2
 151 7
 153 4
-161 2803
-162 22520
+161 2807
+162 22552
 fn=do_lookup_x
 170 300
 171 307
@@ -3307,50 +3803,50 @@ fn=do_lookup_x
 331 164
 333 246
 334 164
-347 39578
-348 2827
-353 2827
-354 2827
-358 19286
-361 19286
-365 30600
-386 19284
-390 19284
-396 28926
-400 9642
-401 9642
-404 48210
-405 28926
-408 9642
-409 19284
-411 9642
-412 19284
-413 9642
-416 38568
-419 67494
-422 5786
-423 8679
-424 5786
-426 5758
-429 35215
-431 8445
-432 68200
-433 5630
-436 8445
-439 12744
+347 39634
+348 2831
+353 2831
+354 2831
+358 19316
+361 19316
+365 30646
+386 19314
+390 19314
+396 28971
+400 9657
+401 9657
+404 48285
+405 28971
+408 9657
+409 19314
+411 9657
+412 19314
+413 9657
+416 38628
+419 67599
+422 5794
+423 8691
+424 5794
+426 5766
+429 35280
+431 8457
+432 68296
+433 5638
+436 8457
+439 12771
 448 532
-453 22424
+453 22456
 470 153
 472 2
-476 5608
-483 15720
-487 4911
-499 5444
-500 2722
-501 2804
-518 20517
+476 5616
+483 15748
+487 4914
+499 5452
+500 2726
+501 2808
+518 20550
 521 23
-522 22617
+522 22649
 fl=/usr/src/debug/glibc/glibc/elf/dl-minimal-malloc.c
 fn=__minimal_calloc
 80 85
@@ -3422,15 +3918,15 @@ fn=_dl_higher_prime_number
 145 2
 146 2
 fn=_dl_name_match_p
-68 868
-69 496
-70 20
-72 124
-74 492
-75 710
-80 122
-82 104
-83 496
+68 903
+69 516
+70 21
+72 129
+74 510
+75 735
+80 126
+82 108
+83 516
 fn=_dl_sysdep_read_whole_file
 36 11
 39 3
@@ -3517,22 +4013,22 @@ fn=_dl_protect_relro
 364 35
 370 21
 fn=_dl_relocate_object
-170 18468
-171 9064
-174 34393
+170 18472
+171 9066
+174 34404
 175 22300
 177 1716
 178 5148
-182 5632
-183 2816
-184 2816
-186 22534
-187 5640
-188 14050
-189 2810
-190 19789
-193 2816
-194 19712
+182 5634
+183 2817
+184 2817
+186 22542
+187 5642
+188 14055
+189 2811
+190 19796
+193 2817
+194 19719
 196 1716
 207 88
 208 16
@@ -3556,31 +4052,31 @@ fn=_dl_relocate_object
 350 64
 fl=/usr/src/debug/glibc/glibc/elf/dl-runtime.c
 fn=_dl_fixup
-46 77
-48 35
-49 21
-54 7
-55 28
-56 49
-58 14
-63 14
-67 14
-69 7
-71 21
-75 21
-76 28
-77 21
-84 7
-85 21
-95 77
-99 35
-109 70
-124 28
-125 2
-133 21
-159 21
-162 14
-163 56
+46 110
+48 50
+49 30
+54 10
+55 40
+56 70
+58 20
+63 20
+67 20
+69 10
+71 30
+75 30
+76 40
+77 30
+84 10
+85 30
+95 110
+99 50
+109 100
+124 40
+125 4
+133 30
+159 30
+162 20
+163 80
 fl=/usr/src/debug/glibc/glibc/elf/dl-setup_hash.c
 fn=_dl_setup_hash
 25 14
@@ -3640,30 +4136,30 @@ fn=__GI___tunable_set_val
 163 36
 165 6
 fn=__GI___tunables_init
-43 500
-46 99
-49 9913
-53 198
-57 396
+43 545
+46 108
+49 10916
+53 216
+57 432
 294 11
 300 3
 304 32
-317 2772
-319 5346
-320 2673
-322 2673
+317 3024
+319 5832
+320 2916
+322 2916
 340 6
 343 27
 346 27
 355 8
 fn=__tunable_get_val
-438 72
-441 426
-450 47
-451 14
+438 74
+441 438
+450 49
+451 15
 460 28
-467 216
-469 36
+467 222
+469 37
 fn=do_tunable_update_val
 70 12
 73 30
@@ -3681,8 +4177,8 @@ fn=do_tunable_update_val
 119 12
 fl=/usr/src/debug/glibc/glibc/elf/dl-tunables.h
 fn=__GI___tunables_init
-160 1629
-161 4419
+160 1740
+161 4796
 fn=do_tunable_update_val
 142 12
 fl=/usr/src/debug/glibc/glibc/elf/dl-version.c
@@ -3694,21 +4190,21 @@ fn=_dl_check_all_versions
 398 42
 401 7
 fn=_dl_check_map_versions
-36 194
-37 53
-38 331
-56 212
-64 159
-70 159
-86 53
-87 106
-89 53
-94 2079
-108 1814
-110 53
-113 424
-120 2562
-124 854
+36 210
+37 57
+38 357
+56 224
+64 168
+70 168
+86 56
+87 112
+89 56
+94 2280
+108 2000
+110 56
+113 448
+120 2832
+124 944
 155 70
 156 7
 164 12
@@ -3719,22 +4215,22 @@ fn=_dl_check_map_versions
 177 14
 180 15
 184 45
-198 6
-200 33
-208 33
-213 33
-215 42
-217 212
-218 348
-221 106
-224 159
+198 7
+200 36
+208 36
+213 36
+215 44
+217 224
+218 381
+221 112
+224 168
 225 15
-228 28
-231 212
-234 159
-239 42
-243 33
-248 6
+228 30
+231 224
+234 168
+239 44
+243 36
+248 7
 257 30
 260 10
 263 555
@@ -3748,18 +4244,18 @@ fn=_dl_check_map_versions
 294 32
 296 12
 299 25
-301 6
-303 33
-306 159
-308 212
-310 265
-311 106
-312 159
-313 159
-316 159
-321 42
-324 33
-329 6
+301 7
+303 36
+306 168
+308 224
+310 280
+311 112
+312 168
+313 168
+316 168
+321 44
+324 36
+329 7
 334 12
 337 10
 341 130
@@ -3789,8 +4285,8 @@ fn=_dl_relocate_object
 72 7
 73 8
 80 42
-83 34
-85 32
+83 64
+85 72
 96 2
 97 2
 114 39
@@ -3798,17 +4294,17 @@ fn=_dl_relocate_object
 124 6
 126 39
 129 44
-131 18477
-133 23055
-134 18444
-135 13833
-136 18444
-138 13833
+131 18481
+133 23060
+134 18448
+135 13836
+136 18448
+138 13836
 141 272
 142 68
 143 68
-147 4543
-150 13652
+147 4544
+150 13655
 164 42
 165 234
 166 204
@@ -4211,9 +4707,15 @@ fn=__read_nocancel
 27 5
 fl=/usr/src/debug/glibc/glibc/io/../sysdeps/unix/sysv/linux/write.c
 fn=write
-25 1
-26 6
-27 1
+25 9
+26 54
+27 9
+fl=/usr/src/debug/glibc/glibc/libio/../include/printf_buffer.h
+fn=vsnprintf
+124 27
+127 9
+128 9
+137 18
 fl=/usr/src/debug/glibc/glibc/libio/../include/sys/sysmacros.h
 fn=_IO_file_doallocate
 47 6
@@ -4233,13 +4735,13 @@ fn=_IO_file_doallocate
 106 9
 fl=/usr/src/debug/glibc/glibc/libio/fileops.c
 fn=_IO_do_write@@GLIBC_2.2.5
-424 7
-426 10
-427 4
+424 55
+426 66
+427 28
 fn=_IO_file_overflow@@GLIBC_2.2.5
-732 184
-733 69
-740 136
+732 368
+733 138
+740 274
 743 2
 745 2
 746 6
@@ -4252,17 +4754,17 @@ fn=_IO_file_overflow@@GLIBC_2.2.5
 771 3
 772 5
 773 1
-775 46
+775 92
 776 2
-777 24
-778 44
-781 66
-782 66
-783 88
-784 4
-785 3
-787 22
-788 137
+777 47
+778 90
+781 135
+782 135
+783 180
+784 36
+785 27
+787 45
+788 275
 fn=_IO_file_setbuf@@GLIBC_2.2.5
 382 6
 383 3
@@ -4274,61 +4776,61 @@ fn=_IO_file_stat
 1147 1
 1148 2
 fn=_IO_file_sync@@GLIBC_2.2.5
-793 84
-798 48
-800 12
-801 24
-812 24
-816 60
+793 140
+798 80
+800 20
+801 40
+812 40
+816 100
 fn=_IO_file_write@@GLIBC_2.2.5
-1174 8
-1175 2
-1176 6
-1180 3
-1181 3
-1182 2
-1187 1
-1188 1
-1190 3
-1191 3
-1194 6
+1174 72
+1175 18
+1176 54
+1180 27
+1181 27
+1182 18
+1187 9
+1188 9
+1190 27
+1191 27
+1194 54
 fn=_IO_file_xsputn@@GLIBC_2.2.5
-1198 36
+1198 540
 1200 2
-1204 6
-1205 3
-1211 12
-1213 7
-1214 4
-1217 40
-1219 48
+1204 90
+1205 45
+1211 180
+1213 133
+1214 88
+1217 1430
+1219 1881
 1228 3
-1229 2
-1234 8
-1236 6
-1237 2
-1238 6
-1240 4
+1229 44
+1234 176
+1236 132
+1237 44
+1238 132
+1240 88
 1244 6
 1250 2
 1251 5
 1253 3
 1264 2
 1265 4
-1267 7
-1268 24
+1267 91
+1268 360
 fn=new_do_write
-432 11
-434 2
-441 4
-449 6
-450 5
-452 3
-453 2
-454 1
-455 2
-456 4
-458 9
+432 99
+434 18
+441 36
+449 54
+450 45
+452 27
+453 18
+454 9
+455 18
+456 36
+458 81
 fl=/usr/src/debug/glibc/glibc/libio/genops.c
 fn=_IO_cleanup
 803 6
@@ -4371,9 +4873,9 @@ fn=_IO_default_xsputn
 400 2
 401 4
 402 1
-406 88
-426 212
-428 21
+406 148
+426 362
+428 36
 431 8
 fn=_IO_doallocbuf
 370 8
@@ -4403,28 +4905,28 @@ fn=_IO_setb
 362 6
 365 6
 fn=__overflow
-226 5
-228 3
-230 3
-231 2
+226 45
+228 27
+230 27
+231 18
 fl=/usr/src/debug/glibc/glibc/libio/iofflush.c
 fn=fflush
-32 66
-33 22
-39 132
-40 55
-44 55
+32 114
+33 38
+39 228
+40 95
+44 95
 fl=/usr/src/debug/glibc/glibc/libio/iofwrite.c
 fn=fwrite
-31 27
-32 6
-35 18
-37 36
-38 14
-39 15
-45 12
-46 3
-49 27
+31 405
+32 90
+35 270
+37 540
+38 224
+39 225
+45 180
+46 45
+49 405
 fl=/usr/src/debug/glibc/glibc/libio/libioP.h
 fn=_IO_cleanup
 1025 4
@@ -4433,8 +4935,8 @@ fn=_IO_default_setbuf
 1025 3
 1026 2
 fn=_IO_default_xsputn
-1025 43
-1026 42
+1025 73
+1026 72
 fn=_IO_doallocbuf
 1025 3
 1026 2
@@ -4447,27 +4949,27 @@ fn=_IO_file_xsputn@@GLIBC_2.2.5
 fn=_IO_flush_all
 1025 2
 fn=__overflow
-1025 3
-1026 2
+1025 27
+1026 18
 fn=fflush
-979 22
-980 88
-1025 33
-1026 22
+979 38
+980 152
+1025 57
+1026 38
 fn=fwrite
-979 6
-980 27
-1025 9
-1026 6
+979 90
+980 405
+1025 135
+1026 90
 fn=new_do_write
-1025 3
-1026 2
+1025 27
+1026 18
 fl=/usr/src/debug/glibc/glibc/libio/putc.c
 fn=putc
-25 9
-28 2
-29 7
-34 5
+25 81
+28 18
+29 63
+34 45
 fl=/usr/src/debug/glibc/glibc/libio/stdfiles.c
 fn=_IO_stdfiles_init
 64 1
@@ -4476,6 +4978,16 @@ fn=_IO_stdfiles_init
 68 3
 69 3
 70 1
+fl=/usr/src/debug/glibc/glibc/libio/vsnprintf.c
+fn=vsnprintf
+63 18
+66 9
+75 27
+76 9
+87 18
+96 36
+102 90
+104 54
 fl=/usr/src/debug/glibc/glibc/libio/vtables.c
 fn=check_stdfiles_vtables
 545 1
@@ -4495,16 +5007,16 @@ fn=newlocale
 277 12
 fl=/usr/src/debug/glibc/glibc/locale/uselocale.c
 fn=uselocale
-30 2
-31 6
-33 4
-36 4
-37 2
-65 6
-66 6
-68 6
-72 6
-73 2
+30 20
+31 60
+33 40
+36 40
+37 20
+65 60
+66 60
+68 60
+72 60
+73 20
 fl=/usr/src/debug/glibc/glibc/malloc/../string/bits/string_fortified.h
 fn=tcache_init.part.0
 59 88
@@ -4512,8 +5024,10 @@ fl=/usr/src/debug/glibc/glibc/malloc/../sysdeps/unix/sysv/linux/not-cancel.h
 fn=ptmalloc_init.part.0
 97 6
 fl=/usr/src/debug/glibc/glibc/malloc/arena.c
+fn=free
+153 54216
 fn=malloc
-153 4
+153 36112
 264 1
 fn=ptmalloc_init.part.0
 262 8
@@ -4535,70 +5049,253 @@ fn=ptmalloc_init.part.0
 316 2
 326 8
 fl=/usr/src/debug/glibc/glibc/malloc/malloc.c
+fn=_int_free
+1792 18042
+3163 64
+3165 128
+3166 32
+3167 64
+4495 126518
+4499 54222
+4505 72296
+4506 36148
+4510 90370
+4517 36148
+4518 108444
+4521 1208
+4527 3624
+4547 6040
+4550 32
+4561 36084
+4637 36084
+4640 36084
+4643 36084
+4646 36084
+4658 90402
+fn=_int_free_create_chunk
+4713 180420
+4714 36084
+4720 35988
+4721 114
+4722 114
+4724 17956
+4732 17994
+4733 71976
+4734 35988
+4736 17994
+4738 35988
+4740 35962
+4743 17994
+4744 17994
+4746 53982
+4747 17994
+4756 48
+4757 144
+4758 48
+4763 108252
+fn=_int_free_maybe_consolidate.part.0
+4769 174911
+4778 47703
+4781 47703
+4784 79505
+4785 50225
+4798 134731
+fn=_int_free_merge_chunk
+1992 54126
+4665 144336
+4666 18042
+4670 108252
+4673 64952
+4675 43302
+4678 54126
+4681 36084
+4682 36084
+4683 36084
+4689 36084
+4691 17928
+4692 17928
+4693 17928
+4694 71712
+4696 35856
+4700 108252
+4702 160237
+4776 36084
 fn=_int_malloc
-1326 6
-1345 12
-1794 3
-3846 30
-3887 6
-3914 6
-3977 6
-3979 6
-3980 2
-3982 3
-4039 25
-4040 6
-4058 7
-4059 9
-4060 9
-4070 15
-4083 1
-4218 12
-4257 9
-4259 8
-4262 6
-4263 3
-4330 3
-4331 6
-4332 6
-4333 6
-4334 18
-4339 12
-4343 18
-4346 15
-4443 3
-4444 6
-4446 6
-4449 9
-4451 2
-4452 2
-4453 2
-4454 16
-4456 4
-4459 2
-4460 2
-4466 4
-4481 4
-4482 2
-4483 18
-4487 27
+1326 36114
+1345 72228
+1794 18057
+1985 5541
+3846 180570
+3887 36114
+3914 36114
+3977 36114
+3979 7146
+3980 2382
+3982 3573
+4039 118645
+4040 50598
+4058 54169
+4059 54171
+4060 54171
+4069 3916
+4070 95817
+4072 1967
+4073 3934
+4074 1967
+4076 3934
+4077 5901
+4079 1967
+4080 7868
+4082 7868
+4083 1191
+4084 3934
+4085 3934
+4087 3934
+4098 7868
+4099 206
+4100 202
+4101 101
+4104 100
+4105 100
+4106 100
+4107 300
+4108 300
+4109 200
+4111 198
+4115 800
+4117 300
+4118 100
+4121 123
+4122 100
+4127 1867
+4128 1867
+4132 3734
+4134 46
+4135 69
+4140 46
+4161 3706
+4163 16
+4164 32
+4165 8
+4169 41587
+4170 5367
+4171 1836
+4174 3672
+4177 282
+4179 564
+4180 282
+4186 560
+4187 140
+4188 420
+4192 5
+4193 2
+4199 1
+4205 4
+4206 1
+4207 2
+4209 1
+4210 3
+4212 1
+4213 2
+4218 74792
+4221 11064
+4222 1844
+4223 1844
+4224 1844
+4225 1844
+4230 3688
+4231 5532
+4240 5532
+4246 5505
+4257 53802
+4259 67372
+4262 50529
+4263 19168
+4330 17934
+4331 35868
+4332 35868
+4333 35868
+4334 107604
+4339 71801
+4343 86067
+4346 62002
+4348 2679
+4349 1786
+4353 93760
+4355 44807
+4357 89614
+4361 2073
+4364 4146
+4366 1245
+4367 249
+4368 249
+4373 5472
+4376 3648
+4378 5472
+4381 5472
+4384 7296
+4394 1824
+4399 7296
+4400 3648
+4403 1824
+4404 1824
+4405 1824
+4408 3648
+4409 2
+4410 3648
+4412 3634
+4415 14592
+4417 5472
+4418 1824
+4421 1824
+4443 16110
+4444 32220
+4446 32220
+4449 48330
+4451 15826
+4452 15826
+4453 15826
+4454 126608
+4456 31652
+4459 15826
+4460 15826
+4466 1136
+4481 1136
+4482 568
+4483 97260
+4487 162513
 fn=alloc_perturb
-1985 9
-1987 3
+1985 48630
+1987 16210
+fn=free
+3359 126504
+3363 36144
+3371 36144
+3373 18072
+3375 54216
+3392 54216
+3398 54216
+3401 18072
+3402 108432
 fn=malloc
-1326 4
-1345 10
+1326 36148
+1345 90370
+3178 36
+3182 36
+3186 72
+3190 36
+3191 18
 3248 4
-3294 16
-3301 4
-3311 4
-3313 8
-3316 4
-3318 3
-3326 4
-3328 8
-3329 10
-3354 12
+3294 144592
+3301 36148
+3311 36148
+3313 72296
+3316 36148
+3318 3627
+3326 36112
+3328 72224
+3329 90280
+3354 108444
 fn=ptmalloc_init.part.0
 1946 387
 1949 381
@@ -4607,33 +5304,40 @@ fn=ptmalloc_init.part.0
 1960 1
 3143 2
 fn=sysmalloc
-2008 8
+2008 1132
 2017 3
-2532 12
-2552 2
-2553 1
-2563 2
-2564 2
-2588 1
-2589 3
-2590 1
-2599 5
-2608 3
-2669 2
-2678 4
-2691 3
-2699 5
-2707 2
-2709 5
-2710 5
-2712 1
-2715 2
-2744 2
+2532 3408
+2552 568
+2553 284
+2563 568
+2564 568
+2588 284
+2589 852
+2590 284
+2599 3401
+2605 1132
+2608 852
+2669 568
+2678 1136
+2691 852
+2699 1420
+2707 568
+2709 1420
+2710 1420
+2712 284
+2715 568
+2727 8
+2732 20
+2734 8
+2738 4
+2742 4
+2744 568
 2745 2
-2746 5
-2752 2
-2755 4
-2782 6
+2746 1420
+2752 564
+2753 1124
+2755 8
+2782 8
 2783 3
 2795 3
 2817 2
@@ -4641,22 +5345,68 @@ fn=sysmalloc
 2820 2
 2821 3
 2833 3
-2875 1
-2876 5
-2877 2
-2888 2
-2921 2
-2922 1
-2926 1
-2927 1
-2930 4
-2932 1
-2933 1
-2934 1
-2935 8
-2936 2
-2938 1
-2944 11
+2847 6
+2866 4
+2875 3
+2876 15
+2877 6
+2888 6
+2895 4
+2896 6
+2904 2
+2906 2
+2911 4
+2913 10
+2921 570
+2922 66
+2926 569
+2927 284
+2930 1136
+2932 284
+2933 284
+2934 284
+2935 2272
+2936 568
+2938 284
+2944 3124
+fn=sysmalloc_mmap_fallback.constprop.0
+2008 8
+2490 22
+2494 2
+2497 6
+2498 5
+2501 4
+2502 4
+2505 4
+2506 2
+2508 18
+2511 4
+2515 4
+2519 8
+2524 2
+2526 2
+2528 18
+fn=systrim.constprop.0
+2957 60270
+2966 30135
+2968 10045
+2969 20090
+2970 10001
+2974 30135
+2975 10045
+2978 50225
+2980 20090
+2987 10407
+2988 13876
+3000 132
+3001 88
+3003 44
+3005 88
+3009 88
+3012 44
+3013 176
+3015 88
+3020 60270
 fn=tcache_init.part.0
 3242 4
 3251 8
@@ -4665,13 +5415,29 @@ fn=tcache_init.part.0
 3261 4
 3270 2
 3274 3
+fn=unlink_chunk.isra.0
+1608 39580
+1610 98950
+1613 39580
+1614 39580
+1616 79160
+1619 19790
+1620 19790
+1621 98890
+1623 3672
+1624 5508
+1627 3672
+1641 1836
+1642 1836
+1645 39580
 fl=/usr/src/debug/glibc/glibc/malloc/morecore.c
 fn=__glibc_morecore
-25 6
-26 4
-29 2
-30 4
-34 4
+25 11526
+26 7684
+27 2
+29 3842
+30 7684
+34 7684
 fl=/usr/src/debug/glibc/glibc/malloc/scratch_buffer_set_array_size.c
 fn=__libc_scratch_buffer_set_array_size
 30 65
@@ -4808,28 +5574,31 @@ fn=munmap
 122 1
 fl=/usr/src/debug/glibc/glibc/misc/../sysdeps/unix/sysv/linux/brk.c
 fn=brk
-36 2
-37 4
-38 4
-44 2
-45 2
+36 329
+37 658
+38 658
+40 4
+41 4
+44 327
+45 327
 fl=/usr/src/debug/glibc/glibc/misc/../sysdeps/unix/sysv/linux/brk_call.h
 fn=brk
-24 4
+24 658
 fl=/usr/src/debug/glibc/glibc/misc/../sysdeps/unix/sysv/linux/mmap64.c
 fn=mmap
-47 182
-50 52
-53 107
-58 156
-60 104
+47 196
+50 56
+53 121
+58 168
+60 112
 fl=/usr/src/debug/glibc/glibc/misc/../sysdeps/unix/sysv/linux/setvmaname.c
 fn=__set_vma_name
-33 12
-35 11
-40 7
-47 1
-49 6
+33 26
+35 21
+40 14
+47 2
+48 1
+49 27
 fl=/usr/src/debug/glibc/glibc/misc/init-misc.c
 fn=__init_misc
 30 5
@@ -4840,16 +5609,18 @@ fn=__init_misc
 40 4
 fl=/usr/src/debug/glibc/glibc/misc/sbrk.c
 fn=sbrk
-37 16
-40 4
-43 4
-58 4
+37 30736
+40 7684
+43 7684
+50 2
+58 7684
 59 4
-62 4
-63 2
-66 4
-74 3
-78 14
+62 7684
+63 90
+66 1268
+68 88
+74 984
+78 26894
 fl=/usr/src/debug/glibc/glibc/nptl/../sysdeps/nptl/futex-internal.h
 fn=__pthread_once_slow.isra.0
 209 8
@@ -4864,6 +5635,11 @@ fn=__lll_elision_init
 107 3
 108 1
 109 6
+fl=/usr/src/debug/glibc/glibc/nptl/alloca_cutoff.c
+fn=__libc_alloca_cutoff
+27 9
+28 81
+35 9
 fl=/usr/src/debug/glibc/glibc/nptl/cleanup_compat.c
 fn=_pthread_cleanup_pop@@GLIBC_2.34
 40 1
@@ -4959,11 +5735,11 @@ fn=__pthread_once_slow.isra.0
 124 1
 132 9
 fn=pthread_once@@GLIBC_2.34
-136 16
-139 14
-140 28
+136 25
+139 23
+140 46
 143 1
-144 29
+144 47
 fl=/usr/src/debug/glibc/glibc/posix/../malloc/dynarray-skeleton.c
 fn=__unregister_atfork
 243 5
@@ -5020,6 +5796,362 @@ fn=__sigjmp_save
 29 1
 30 2
 34 4
+fl=/usr/src/debug/glibc/glibc/stdio-common/../include/../locale/localeinfo.h
+fn=__printf_fp_l_buffer
+331 27
+fl=/usr/src/debug/glibc/glibc/stdio-common/../include/printf_buffer.h
+fn=__printf_fp_buffer_1.isra.0
+163 45
+fl=/usr/src/debug/glibc/glibc/stdio-common/../include/rounding-mode.h
+fn=__printf_fp_buffer_1.isra.0
+52 32
+58 14
+fl=/usr/src/debug/glibc/glibc/stdio-common/../string/bits/string_fortified.h
+fn=__printf_buffer_write
+29 27
+fn=__printf_fp_buffer_1.isra.0
+29 43
+fl=/usr/src/debug/glibc/glibc/stdio-common/../sysdeps/generic/get-rounding-mode.h
+fn=__printf_fp_buffer_1.isra.0
+94 9
+95 63
+fl=/usr/src/debug/glibc/glibc/stdio-common/../sysdeps/pthread/allocalim.h
+fn=__printf_fp_buffer_1.isra.0
+27 18
+29 45
+fl=/usr/src/debug/glibc/glibc/stdio-common/Xprintf_buffer_done.c
+fn=__printf_buffer_done
+25 9
+26 27
+31 18
+33 99
+40 9
+fl=/usr/src/debug/glibc/glibc/stdio-common/Xprintf_buffer_write.c
+fn=__printf_buffer_write
+27 216
+28 81
+31 90
+33 45
+36 9
+37 18
+40 27
+41 9
+44 162
+fl=/usr/src/debug/glibc/glibc/stdio-common/printf-parse.h
+fn=__printf_buffer
+82 81
+fl=/usr/src/debug/glibc/glibc/stdio-common/printf_fp.c
+fn=__printf_fp_buffer_1.isra.0
+138 162
+159 72
+177 9
+187 9
+221 18
+222 9
+226 36
+230 153
+234 9
+266 45
+267 9
+268 18
+271 153
+272 144
+273 135
+279 9
+280 18
+283 9
+293 9
+294 63
+297 27
+301 36
+305 36
+306 9
+308 54
+309 81
+310 18
+311 45
+313 18
+318 117
+322 693
+324 64
+327 30
+337 23
+368 20
+369 40
+375 78
+377 13
+380 26
+381 26
+382 39
+385 194
+388 44
+389 44
+390 55
+391 44
+394 117
+396 234
+397 18
+403 30
+407 99
+411 36
+413 18
+439 18
+442 72
+458 27
+460 27
+461 54
+463 56
+477 18
+665 27
+674 54
+676 18
+680 18
+686 18
+692 18
+694 9
+706 63
+707 36
+720 9
+721 18
+722 36
+728 27
+731 45
+738 36
+746 36
+759 153
+760 27
+763 18
+766 249
+769 114
+771 9
+773 54
+774 48
+775 27
+787 9
+788 18
+789 25
+790 160
+792 16
+793 48
+794 16
+795 16
+796 64
+805 27
+806 36
+808 63
+809 3
+810 9
+813 6
+830 14
+834 10
+835 65
+837 2
+838 4
+840 63
+842 14
+844 12
+845 7
+855 15
+858 3
+861 9
+864 3
+866 1
+924 56
+926 2
+927 2
+931 24
+932 2
+935 28
+980 54
+983 18
+987 45
+988 9
+991 27
+994 36
+996 72
+1001 18
+1003 18
+1006 18
+1009 27
+1022 36
+1024 27
+1028 18
+1030 99
+fn=__printf_fp_l_buffer
+1099 162
+1102 27
+1111 9
+1112 18
+1115 45
+1116 45
+1117 27
+1122 63
+1126 9
+1147 99
+fn=hack_digit
+88 315
+91 189
+93 189
+95 126
+101 126
+105 441
+107 252
+108 63
+110 126
+111 378
+118 126
+122 252
+123 126
+124 280
+128 315
+fl=/usr/src/debug/glibc/glibc/stdio-common/vfprintf-internal.c
+fn=__printf_buffer
+263 27
+264 27
+266 9
+600 126
+627 45
+631 9
+634 9
+638 36
+642 9
+653 27
+654 18
+655 27
+659 18
+663 81
+683 9
+684 9
+685 9
+686 9
+687 9
+690 36
+691 9
+692 9
+693 9
+694 9
+695 9
+698 9
+699 9
+705 126
+744 18
+813 9
+814 27
+818 18
+819 36
+834 63
+837 54
+855 126
+973 18
+976 315
+996 99
+997 18
+1001 9
+1018 9
+1024 9
+1028 27
+1029 18
+1031 18
+1044 99
+fl=/usr/src/debug/glibc/glibc/stdio-common/vfprintf-process-arg.c
+fn=__printf_buffer
+195 9
+fl=/usr/src/debug/glibc/glibc/stdlib/../sysdeps/ieee754/dbl-64/dbl2mpn.c
+fn=__mpn_extract_double
+33 27
+35 9
+37 27
+38 45
+47 27
+56 27
+103 18
+107 18
+fl=/usr/src/debug/glibc/glibc/stdlib/../sysdeps/x86_64/lshift.S
+fn=__mpn_lshift
+28 9
+29 9
+30 9
+32 9
+33 9
+34 9
+46 9
+47 9
+48 9
+49 9
+50 9
+51 9
+52 9
+58 9
+59 9
+60 9
+fl=/usr/src/debug/glibc/glibc/stdlib/../sysdeps/x86_64/mul_1.S
+fn=__mpn_mul_1
+31 76
+32 76
+35 76
+36 76
+37 76
+38 76
+39 76
+41 76
+42 76
+44 76
+45 76
+46 76
+47 76
+48 63
+50 63
+51 63
+52 63
+53 63
+79 13
+80 13
+81 13
+82 13
+83 13
+84 13
+85 13
+86 13
+87 13
+113 13
+114 13
+115 13
+117 13
+118 13
+119 13
+120 13
+121 13
+122 76
+124 76
+127 76
+fl=/usr/src/debug/glibc/glibc/stdlib/../sysdeps/x86_64/rshift.S
+fn=__mpn_rshift
+28 18
+29 18
+30 18
+31 18
+44 18
+45 18
+61 18
+62 18
+63 18
+64 18
+65 18
+66 18
+67 18
+72 18
+73 18
+74 18
+75 18
+76 18
+fl=/usr/src/debug/glibc/glibc/stdlib/cmp.c
+fn=__mpn_cmp
+31 23
+35 46
+37 23
+38 23
+39 46
+47 115
 fl=/usr/src/debug/glibc/glibc/stdlib/cxa_atexit.c
 fn=__cxa_atexit
 67 12
@@ -5081,6 +6213,22 @@ fn=__call_tls_dtors
 148 5
 149 4
 165 4
+fl=/usr/src/debug/glibc/glibc/stdlib/divrem.c
+fn=__mpn_divrem
+46 819
+47 63
+49 126
+62 63
+63 63
+65 126
+67 4
+68 8
+72 637
+73 168
+76 189
+79 63
+81 63
+234 567
 fl=/usr/src/debug/glibc/glibc/stdlib/exit.c
 fn=__run_exit_handlers
 38 12
@@ -5116,23 +6264,36 @@ fn=getenv
 24 9
 25 8
 28 2
-29 399
-31 198
-32 36
+29 435
+31 216
+32 48
 37 9
+fl=/usr/src/debug/glibc/glibc/stdlib/mul.c
+fn=__mpn_mul
+48 221
+54 26
+66 26
+71 13
+72 26
+81 78
+83 13
+84 13
+88 26
+141 13
+142 143
 fl=/usr/src/debug/glibc/glibc/stdlib/rand.c
 fn=rand
-26 60000
-27 20000
-28 40000
+26 17100000
+27 5700000
+28 11400000
 fl=/usr/src/debug/glibc/glibc/stdlib/random.c
 fn=random
-288 140000
-291 60000
-293 60000
-295 80000
-297 20000
-298 100000
+288 39900000
+291 17100000
+293 17100000
+295 22800000
+297 5700000
+298 28500000
 fn=srand
 209 6
 210 4
@@ -5141,24 +6302,24 @@ fn=srand
 213 3
 fl=/usr/src/debug/glibc/glibc/stdlib/random_r.c
 fn=random_r
-354 20000
-357 80000
-360 20000
-362 60000
-370 20000
-371 20000
-372 20000
-375 60000
-377 40000
-378 39355
-379 40000
-382 20000
-387 38710
-388 1290
-390 20000
-391 20000
-393 20000
-398 20000
+354 5700000
+357 22800000
+360 5700000
+362 17100000
+370 5700000
+371 5700000
+372 5700000
+375 17100000
+377 11400000
+378 11216129
+379 11400000
+382 5700000
+387 11032258
+388 367740
+390 5700000
+391 5700000
+393 5700000
+398 5700000
 fn=srandom_r
 162 2
 170 2
@@ -5215,12 +6376,12 @@ fn=strcspn
 53 4
 54 4
 56 4
-61 11
-62 22
-63 22
-64 22
-65 11
-67 66
+61 12
+62 24
+63 24
+64 24
+65 12
+67 72
 69 1
 70 4
 71 3
@@ -5362,15 +6523,15 @@ fn=index
 147 5
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
 fn=strcmp
-98 3453
-131 3453
-132 3453
-134 3453
-135 3453
-156 3453
-157 3453
-158 1986
-159 1986
+98 3474
+131 3474
+132 3474
+134 3474
+135 3474
+156 3474
+157 3474
+158 2000
+159 2000
 160 1829
 161 1829
 162 1829
@@ -5382,80 +6543,80 @@ fn=strcmp
 184 1829
 185 1829
 186 1829
-191 52
-192 156
-201 1676
-202 1676
-203 1676
-204 1676
-205 1676
-206 1676
-207 1676
-208 1676
-209 331
-210 168
-211 168
-212 168
-214 331
-215 331
-216 331
-217 331
-218 331
-219 331
-229 1345
-230 1345
-231 1345
-233 1345
-239 1345
-240 1345
-241 1345
-242 1345
-243 1345
-248 1345
-250 122
-251 122
-252 244
-260 122
-261 122
-264 122
-265 122
-266 122
-267 122
-268 122
-269 122
-424 14
-425 14
-426 14
-427 14
-428 14
-430 14
-431 14
-432 14
-433 14
-434 14
-435 14
-436 14
-437 14
-440 14
-441 14
-442 14
-448 14
-449 14
-450 28
-454 14
-455 14
-458 14
-459 14
-460 14
-462 14
-463 14
-464 14
-468 14
-469 14
-470 14
-471 14
-472 14
-473 14
+191 53
+192 159
+201 1698
+202 1698
+203 1698
+204 1698
+205 1698
+206 1698
+207 1698
+208 1698
+209 348
+210 176
+211 176
+212 176
+214 348
+215 348
+216 348
+217 348
+218 348
+219 348
+229 1350
+230 1350
+231 1350
+233 1350
+239 1350
+240 1350
+241 1350
+242 1350
+243 1350
+248 1350
+250 123
+251 123
+252 246
+260 123
+261 123
+264 123
+265 123
+266 123
+267 123
+268 123
+269 123
+424 15
+425 15
+426 15
+427 15
+428 15
+430 15
+431 15
+432 15
+433 15
+434 15
+435 15
+436 15
+437 15
+440 15
+441 15
+442 15
+448 15
+449 15
+450 30
+454 15
+455 15
+458 15
+459 15
+460 15
+462 15
+463 15
+464 15
+468 15
+469 15
+470 15
+471 15
+472 15
+473 15
 542 8
 543 8
 544 8
@@ -5489,169 +6650,150 @@ fn=strcmp
 590 8
 591 8
 592 8
-661 4
-662 4
-663 4
-664 4
-665 4
-667 4
-668 4
-669 4
-670 4
-671 4
-672 4
-673 4
-674 4
-678 4
-679 4
-680 4
-686 4
-687 4
-688 8
-692 5
-693 5
-696 5
-697 5
-698 5
-700 5
-701 5
-702 5
-706 5
-707 5
-708 5
-709 5
-710 5
-711 5
-718 1
-719 1
-721 1
-722 1
-724 1
-725 1
-726 1
-728 1
-729 1
-730 1
-734 1
-735 1
-736 1
-737 1
-738 1
-739 1
-746 1
-747 1
-748 1
-780 7
-781 7
-782 7
-783 7
-784 7
-786 7
-787 7
-788 7
-789 7
-790 7
-791 7
-792 7
-793 7
-797 7
-798 7
-799 7
-805 7
-806 7
-807 14
-811 7
-812 7
-815 7
-816 7
-817 7
-819 7
-820 7
-821 7
-825 7
-826 7
-827 7
-828 7
-829 7
-830 7
-899 12
-900 12
-901 12
-902 12
-903 12
-905 12
-906 12
-907 12
-908 12
-909 12
-910 12
-911 12
-912 11
-916 11
-917 11
-918 11
-924 11
-925 11
-926 22
-930 11
-931 11
-934 11
-935 11
-936 11
-938 11
-939 11
-940 11
-944 11
-945 11
-946 11
-947 11
-948 11
-949 11
-1018 14
-1019 14
-1020 14
-1021 14
-1022 14
-1024 14
-1025 14
-1026 14
-1027 14
-1028 14
-1029 14
-1030 14
-1031 12
-1035 12
-1036 12
-1037 12
-1043 12
-1044 12
-1045 24
-1049 12
-1050 12
-1053 12
-1054 12
-1055 12
-1057 12
-1058 12
-1059 12
-1063 12
-1064 12
-1065 12
-1066 12
-1067 12
-1068 12
-1137 30
-1138 30
-1139 30
-1140 30
-1141 30
-1143 30
-1144 30
-1145 30
-1146 30
-1147 30
-1148 30
-1149 30
+661 3
+662 3
+663 3
+664 3
+665 3
+667 3
+668 3
+669 3
+670 3
+671 3
+672 3
+673 3
+674 3
+678 3
+679 3
+680 3
+686 3
+687 3
+688 6
+692 3
+693 3
+696 3
+697 3
+698 3
+700 3
+701 3
+702 3
+706 3
+707 3
+708 3
+709 3
+710 3
+711 3
+780 8
+781 8
+782 8
+783 8
+784 8
+786 8
+787 8
+788 8
+789 8
+790 8
+791 8
+792 8
+793 8
+797 8
+798 8
+799 8
+805 8
+806 8
+807 16
+811 8
+812 8
+815 8
+816 8
+817 8
+819 8
+820 8
+821 8
+825 8
+826 8
+827 8
+828 8
+829 8
+830 8
+899 14
+900 14
+901 14
+902 14
+903 14
+905 14
+906 14
+907 14
+908 14
+909 14
+910 14
+911 14
+912 13
+916 13
+917 13
+918 13
+924 13
+925 13
+926 26
+930 13
+931 13
+934 13
+935 13
+936 13
+938 13
+939 13
+940 13
+944 13
+945 13
+946 13
+947 13
+948 13
+949 13
+1018 15
+1019 15
+1020 15
+1021 15
+1022 15
+1024 15
+1025 15
+1026 15
+1027 15
+1028 15
+1029 15
+1030 15
+1031 13
+1035 13
+1036 13
+1037 13
+1043 13
+1044 13
+1045 26
+1049 13
+1050 13
+1053 13
+1054 13
+1055 13
+1057 13
+1058 13
+1059 13
+1063 13
+1064 13
+1065 13
+1066 13
+1067 13
+1068 13
+1137 31
+1138 31
+1139 31
+1140 31
+1141 31
+1143 31
+1144 31
+1145 31
+1146 31
+1147 31
+1148 31
+1149 31
 1150 11
 1154 11
 1155 11
@@ -5659,48 +6801,51 @@ fn=strcmp
 1162 11
 1163 11
 1164 22
-1168 11
-1169 11
-1172 11
-1173 11
-1174 11
-1176 11
-1177 11
-1178 11
-1182 11
-1183 11
-1184 11
-1185 11
-1186 11
-1187 11
-1194 1
-1195 1
-1197 1
-1198 1
-1200 1
-1201 1
-1202 1
-1204 1
-1205 1
-1206 1
-1210 1
-1211 1
-1212 1
-1213 1
-1214 1
-1215 1
-1256 30
-1257 30
-1258 30
-1259 30
-1260 30
-1262 30
-1263 30
-1264 30
-1265 30
-1266 30
-1267 30
-1268 30
+1168 12
+1169 12
+1172 12
+1173 12
+1174 12
+1176 12
+1177 12
+1178 12
+1182 12
+1183 12
+1184 12
+1185 12
+1186 12
+1187 12
+1194 2
+1195 2
+1197 2
+1198 2
+1200 2
+1201 2
+1202 2
+1204 2
+1205 2
+1206 2
+1210 2
+1211 2
+1212 2
+1213 2
+1214 2
+1215 2
+1222 1
+1223 1
+1224 1
+1256 33
+1257 33
+1258 33
+1259 33
+1260 33
+1262 33
+1263 33
+1264 33
+1265 33
+1266 33
+1267 33
+1268 33
 1269 17
 1273 17
 1274 17
@@ -5722,18 +6867,18 @@ fn=strcmp
 1304 17
 1305 17
 1306 17
-1375 42
-1376 42
-1377 42
-1378 42
-1379 42
-1381 42
-1382 42
-1383 42
-1384 42
-1385 42
-1386 42
-1387 42
+1375 51
+1376 51
+1377 51
+1378 51
+1379 51
+1381 51
+1382 51
+1383 51
+1384 51
+1385 51
+1386 51
+1387 51
 1388 22
 1392 22
 1393 22
@@ -5741,103 +6886,81 @@ fn=strcmp
 1400 22
 1401 22
 1402 44
-1406 23
-1407 23
-1410 23
-1411 23
-1412 23
-1414 23
-1415 23
-1416 23
-1420 23
-1421 23
-1422 23
-1423 23
-1424 23
-1425 23
-1432 1
-1433 1
-1435 1
-1436 1
-1438 1
-1439 1
-1440 1
-1442 1
-1443 1
-1444 1
-1448 1
-1449 1
-1450 1
-1451 1
-1452 1
-1453 1
-1460 1
-1461 1
-1462 1
-1494 28
-1495 28
-1496 28
-1497 28
-1498 28
-1500 28
-1501 28
-1502 28
-1503 28
-1504 28
-1505 28
-1506 28
-1507 12
-1511 12
-1512 12
-1513 12
-1519 12
-1520 12
-1521 24
-1525 13
-1526 13
-1529 13
-1530 13
-1531 13
-1533 13
-1534 13
-1535 13
-1539 13
-1540 13
-1541 13
-1542 13
-1543 13
-1544 13
-1551 2
-1552 2
-1554 2
-1555 2
-1557 2
-1558 2
-1559 2
-1561 2
-1562 2
-1563 2
-1567 2
-1568 2
-1569 2
-1570 2
-1571 2
-1572 2
-1579 1
-1580 1
-1581 1
-1613 29
-1614 29
-1615 29
-1616 29
-1617 29
-1619 29
-1620 29
-1621 29
-1622 29
-1623 29
-1624 29
-1625 29
+1406 22
+1407 22
+1410 22
+1411 22
+1412 22
+1414 22
+1415 22
+1416 22
+1420 22
+1421 22
+1422 22
+1423 22
+1424 22
+1425 22
+1494 23
+1495 23
+1496 23
+1497 23
+1498 23
+1500 23
+1501 23
+1502 23
+1503 23
+1504 23
+1505 23
+1506 23
+1507 11
+1511 11
+1512 11
+1513 11
+1519 11
+1520 11
+1521 22
+1525 11
+1526 11
+1529 11
+1530 11
+1531 11
+1533 11
+1534 11
+1535 11
+1539 11
+1540 11
+1541 11
+1542 11
+1543 11
+1544 11
+1551 1
+1552 1
+1554 1
+1555 1
+1557 1
+1558 1
+1559 1
+1561 1
+1562 1
+1563 1
+1567 1
+1568 1
+1569 1
+1570 1
+1571 1
+1572 1
+1613 22
+1614 22
+1615 22
+1616 22
+1617 22
+1619 22
+1620 22
+1621 22
+1622 22
+1623 22
+1624 22
+1625 22
 1626 18
 1630 18
 1631 18
@@ -5875,88 +6998,88 @@ fn=strcmp
 1689 2
 1690 2
 1691 2
-1732 37
-1733 37
-1734 37
-1735 37
-1736 37
-1738 37
-1739 37
-1740 37
-1741 37
-1742 37
-1743 37
-1744 37
-1745 25
-1749 25
-1750 25
-1751 25
-1757 25
-1758 25
-1759 50
-1763 25
-1764 25
-1767 25
-1768 25
-1769 25
-1771 25
-1772 25
-1773 25
-1777 25
-1778 25
-1779 25
-1780 25
-1781 25
-1782 25
-1789 1
-1790 1
-1792 1
-1793 1
-1795 1
-1796 1
-1797 1
-1799 1
-1800 1
-1801 1
-1805 1
-1806 1
-1807 1
-1808 1
-1809 1
-1810 1
-1851 40
-1852 40
-1853 40
-1854 40
-1855 40
-1857 40
-1858 40
-1859 40
-1860 40
-1861 40
-1862 40
-1863 40
-1864 23
-1868 23
-1869 23
-1870 23
-1876 23
-1877 23
-1878 46
-1882 23
-1883 23
-1886 23
-1887 23
-1888 23
-1890 23
-1891 23
-1892 23
-1896 23
-1897 23
-1898 23
-1899 23
-1900 23
-1901 23
+1732 41
+1733 41
+1734 41
+1735 41
+1736 41
+1738 41
+1739 41
+1740 41
+1741 41
+1742 41
+1743 41
+1744 41
+1745 29
+1749 29
+1750 29
+1751 29
+1757 29
+1758 29
+1759 58
+1763 29
+1764 29
+1767 29
+1768 29
+1769 29
+1771 29
+1772 29
+1773 29
+1777 29
+1778 29
+1779 29
+1780 29
+1781 29
+1782 29
+1789 3
+1790 3
+1792 3
+1793 3
+1795 3
+1796 3
+1797 3
+1799 3
+1800 3
+1801 3
+1805 3
+1806 3
+1807 3
+1808 3
+1809 3
+1810 3
+1851 48
+1852 48
+1853 48
+1854 48
+1855 48
+1857 48
+1858 48
+1859 48
+1860 48
+1861 48
+1862 48
+1863 48
+1864 24
+1868 24
+1869 24
+1870 24
+1876 24
+1877 24
+1878 48
+1882 24
+1883 24
+1886 24
+1887 24
+1888 24
+1890 24
+1891 24
+1892 24
+1896 24
+1897 24
+1898 24
+1899 24
+1900 24
+1901 24
 1908 4
 1909 4
 1911 4
@@ -6006,17 +7129,17 @@ fn=strcmp
 2020 16
 2021 16
 2022 16
-2093 322
-2095 1676
-2096 1676
-2097 1676
-2098 1676
-2099 336
-2104 3453
-2110 3453
-2111 3453
-2119 3453
-2120 3453
+2093 331
+2095 1698
+2096 1698
+2097 1698
+2098 1698
+2099 352
+2104 3474
+2110 3474
+2111 3474
+2119 3474
+2120 3474
 fn=strncmp
 98 1
 125 1
@@ -6160,15 +7283,15 @@ fn=memcpy@@GLIBC_2.14
 93 8
 96 20
 fn=memmove
-56 8
-57 12
-60 12
-61 8
-74 8
-77 8
-85 8
-93 8
-96 20
+56 10
+57 15
+60 15
+61 10
+74 10
+77 10
+85 10
+93 10
+96 25
 fn=mempcpy
 56 2
 57 3
@@ -6267,6 +7390,29 @@ fn=strncpy
 40 4
 43 6
 46 8
+fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/memchr-avx2.S
+fn=__memchr_avx2
+61 9
+68 9
+70 9
+73 9
+74 9
+76 9
+77 9
+78 9
+79 9
+82 9
+83 9
+86 9
+87 9
+101 9
+106 9
+113 9
+114 9
+115 8
+116 8
+128 1
+129 1
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/memchr.c
 fn=memchr
 29 4
@@ -6346,32 +7492,121 @@ fn=memcpy@@GLIBC_2.14
 29 4
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
 fn=__memcpy_avx_unaligned_erms
-262 2
-263 2
-305 2
-306 2
-308 2
-309 2
-311 1
-315 1
-316 1
-317 1
-318 1
-319 1
-320 1
-321 1
-323 1
-325 1
-364 1
-365 1
-366 1
-367 1
-368 1
+255 18039
+256 18039
+262 18083
+263 18083
+265 18008
+266 18008
+267 18008
+270 8
+271 8
+272 8
+275 16
+305 75
+306 75
+308 54
+309 54
+311 36
+315 36
+316 9
+317 9
+318 9
+319 9
+320 9
+321 9
+323 9
+325 9
+331 27
+332 27
+333 27
+334 27
+335 27
+342 21
+343 21
+344 21
+345 21
+347 21
+364 18
+365 18
+366 18
+367 18
+368 18
+386 18000
+387 18000
+392 18000
+393 18000
+417 18000
+418 18000
+422 18000
+424 18000
+428 18000
+429 18000
+440 18000
+443 18000
+445 18000
+447 18000
+451 18000
+452 18000
+461 16884
+462 16884
+464 16884
+466 16884
+467 16884
+468 16884
+471 16884
+473 16884
+475 16884
+477 33768
+483 319922
+484 319922
+485 319922
+486 319922
+487 319922
+488 319922
+489 319922
+490 319922
+491 319922
+492 319922
+493 319922
+494 319922
+496 16884
+497 16884
+498 16884
+499 16884
+501 16884
+505 33768
+518 1116
+519 1116
+521 1116
+522 1116
+523 1116
+525 1116
+527 1116
+529 2232
+535 21277
+536 21277
+537 21277
+538 21277
+539 21277
+540 21277
+541 21277
+542 21277
+543 21277
+544 21277
+545 21277
+546 21277
+548 1116
+549 1116
+550 1116
+551 1116
+553 1116
+554 2232
 fn=__mempcpy_avx_unaligned_erms
-242 2
-243 2
-244 2
-245 2
+242 44
+243 44
+244 44
+245 44
 fn=memcpy
 210 30
 211 30
@@ -6456,7 +7691,7 @@ fn=mempcpy
 200 10
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/memmove.c
 fn=memmove
-29 4
+29 5
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/mempcpy.c
 fn=mempcpy
 33 1
@@ -6481,6 +7716,26 @@ fn=strcasecmp_l
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strcat.c
 fn=strcat
 29 3
+fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strchr-avx2.S
+fn=__strchrnul_avx2
+53 18
+55 18
+56 18
+57 18
+58 18
+59 18
+62 18
+63 18
+67 18
+68 18
+69 18
+70 18
+71 18
+72 18
+73 18
+74 18
+87 18
+89 36
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strchr.c
 fn=index
 42 8
@@ -6496,39 +7751,39 @@ fn=strchrnul
 31 3
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S
 fn=__strncmp_avx2
-206 6
-230 6
-235 6
-249 6
-274 6
-275 6
-276 6
-278 6
-279 6
-283 6
-287 6
-289 6
-291 6
-294 6
-296 6
-297 6
-308 6
-318 6
-319 6
-322 6
-326 12
-331 6
-332 6
-333 6
-957 2
-958 2
-959 2
-960 2
-962 2
-965 2
-966 2
-1076 2
-1077 2
+206 8
+230 8
+235 8
+249 8
+274 8
+275 8
+276 8
+278 8
+279 8
+283 8
+287 8
+289 8
+291 8
+294 8
+296 8
+297 8
+308 8
+318 8
+319 8
+322 8
+326 16
+331 8
+332 8
+333 8
+957 1
+958 1
+959 1
+960 1
+962 1
+965 1
+966 1
+1076 1
+1077 1
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strcmp.c
 fn=strcmp
 47 8
@@ -6547,19 +7802,29 @@ fn=strcspn
 29 2
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strlen-avx2.S
 fn=__strlen_avx2
-52 71
-65 71
-66 71
-67 71
-70 71
-72 71
-73 71
-76 71
-77 71
-85 71
-86 71
-87 71
-92 142
+52 105
+65 105
+66 105
+67 105
+70 105
+72 105
+73 105
+76 105
+77 105
+85 105
+86 105
+87 96
+92 192
+118 9
+131 9
+132 9
+133 9
+139 18
+221 9
+236 9
+242 9
+243 9
+244 9
 fl=/usr/src/debug/glibc/glibc/string/../sysdeps/x86_64/multiarch/strlen.c
 fn=strlen
 29 12
@@ -6627,14 +7892,6 @@ fn=strdup
 44 10
 47 20
 48 15
-fl=/usr/src/debug/glibc/glibc/time/../sysdeps/unix/sysv/linux/clock_gettime.c
-fn=clock_gettime@@GLIBC_2.17
-30 2
-38 4
-40 4
-44 4
-68 4
-69 4
 fl=/usr/src/debug/glibc/glibc/time/../sysdeps/unix/sysv/linux/dl-vdso.h
 fn=gettimeofday
 40 2
@@ -6817,9 +8074,9 @@ fl=???
 fn=(below main)
 0 12
 fn=???
-0 20416
+0 5754678
 fn=btree_destroy
 0 32
 fn=release_registered_frames
 0 10
-summary: 65678841
+summary: 490940076521

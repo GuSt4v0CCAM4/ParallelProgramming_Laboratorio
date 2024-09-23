@@ -1,51 +1,71 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h> 
 #include <time.h>
-#include <chrono>
+#include <vector>  
+#include <x86intrin.h>
 
-#define MAX 100
 using namespace std;
-using namespace std::chrono;
+const double FRECUENCIA_CPU_MHZ = 3900.0;
 
-void llenarMatrizAletoriamnte(int matriz[MAX][MAX])
+void llenarMatrizAletoriamnte(vector<vector<int>>& matriz, int n)
 {
-    for (int i = 0; i < MAX; i++) {
-        for (int j = 0; j < MAX; j++) {
-            matriz[i][j] = rand() % 100;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            matriz[i][j] = rand() % n;
         }
     }
 }
 
-void multiplicacionMatrices(int a[MAX][MAX], int b[MAX][MAX], int resultado[MAX][MAX])
+void multiplicacionMatrices(vector<vector<int>>& a, vector<vector<int>>& b, vector<vector<int>>& resultado, int n)
 {
-    for (int j = 0; j < MAX; j++) {
-        for (int i = 0; i < MAX; i++) {
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < n; i++) {
             resultado[j][i] = 0;
-            for (int e = 0; e < MAX; ++e) {
+            for (int e = 0; e < n; ++e) {
                 resultado[j][i] += a[j][e] * b[e][i];
             }
         }
     }
 }
 
+inline uint64_t leerContadorCiclos(){
+    return __rdtsc();
+}
+
+double convertirCiclosAMilisegundos(uint64_t ciclos) {
+    return (ciclos / FRECUENCIA_CPU_MHZ) / 1000.0;
+}
+
 int main() {
     srand(static_cast<unsigned>(time(0)));
-    int matriz1[MAX][MAX];
-    int matriz2[MAX][MAX];
-    int MatrizResultado[MAX][MAX];
+    int nRep = 2;
+    for (int i = 100; i < 1000; i = i+100 ){ //tamaño de la matriz
+        vector<vector<int>> matriz1(i, vector<int>(i));
+        vector<vector<int>> matriz2(i, vector<int>(i));
+        llenarMatrizAletoriamnte(matriz1, i);
+        llenarMatrizAletoriamnte(matriz2, i);
 
-    llenarMatrizAletoriamnte(matriz1);
-    llenarMatrizAletoriamnte(matriz2);
+        uint64_t promRep = 0;
 
-    auto start = high_resolution_clock::now();
+        for(int j = 0; j < nRep; j++){
+            vector<vector<int>> MatrizResultado(i, vector<int>(i));
 
-    multiplicacionMatrices(matriz1, matriz2, MatrizResultado);
+            uint64_t start = leerContadorCiclos();
+            multiplicacionMatrices(matriz1, matriz2, MatrizResultado, i);
+            uint64_t end = leerContadorCiclos();
+            uint64_t duracionCiclos = end - start;
+            promRep += duracionCiclos;
 
-    auto end = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(end - start).count();
-
-    cout << "Tiempo de ejecucion: " << duration << " milisegundos" << endl;
+            //cout << "Tiempo de ejecucion: " << duracionCiclos << " ciclos" << endl;
+        }
+        uint64_t promedio = promRep/nRep;
+        double duracionMiliSegundos = convertirCiclosAMilisegundos(promedio);
+        cout << "El tiempo promedio para matrices de " << i << " tamanio es de " << duracionMiliSegundos << " milisegundos" << endl;
+    }
+             
+    
 
     return 0;
 }
